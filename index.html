@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />   
     
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script src="js/OneSignalSDKWorker.js"></script>
+    <script src="js/OneSignalSDKUpdaterWorker.js"></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "30560952-e1b4-4870-b2ba-b782c69661f1",
+        });
+      });
+    </script>
     
 </head>
 
@@ -450,17 +460,7 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="js/main.js"></script>
     
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-    <script src="js/OneSignalSDKWorker.js"></script>
-    <script src="js/OneSignalSDKUpdaterWorker.js"></script>
-    <script>
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "30560952-e1b4-4870-b2ba-b782c69661f1",
-        });
-      });
-    </script>
+    
     
 </body>
 
