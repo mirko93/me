@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="css/plugins.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />   
 
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-    <script>
-        window.OneSignal = window.OneSignal || [];
-        OneSignal.push(function() {
-            OneSignal.once("init", function(event) {
-                // This callback fires only once when the event occurs, and does not refire
-                appId: "30560952-e1b4-4870-b2ba-b782c69661f1",
-            });
-        });
-    </script>
+  
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "30560952-e1b4-4870-b2ba-b782c69661f1",
+      allowLocalhostAsSecureOrigin: true,
+    });
+  });
+</script>
     
     
 </head>
