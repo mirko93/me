@@ -13,7 +13,12 @@
     
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
 
-    <script>window.OneSignal = window.OneSignal || [];</script>
+    <script>window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+          appId: "30560952-e1b4-4870-b2ba-b782c69661f1",
+        });
+      });</script>
     
 </head>
 
