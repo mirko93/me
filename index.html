@@ -15,6 +15,9 @@
     <script>
     window.OneSignal = window.OneSignal || [];
     OneSignal.push(function() {
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/web/' };
+        OneSignal.SERVICE_WORKER_PATH = 'web/OneSignalSDKWorker.js';
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = 'web/OneSignalSDKUpdaterWorker.js';
         OneSignal.init({
         appId: "30560952-e1b4-4870-b2ba-b782c69661f1",
         safari_web_id: "",
@@ -26,7 +29,7 @@
     });
     </script>
     <script>
-        navigator.serviceWorker.register('web/OneSignalSDKWorker.js')
+        navigator.serviceWorker.register('./js/OneSignalSDKWorker.js')
     </script>
 </head>
     
